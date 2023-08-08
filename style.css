@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #dfdddd;
+}
+#crystals{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:1000px;
+    height: 100%;
+    background: transparent;
+    
+}
+.crystal_01{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_01.png);
+}
+.crystal_02{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_02.png);
+}
+.crystal_03{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    margin-left: -180px;
+    background: url(http://img.finalfantasyxiv.com/lds/promo/pc/global/images/world/what/crystal_03.png);
+}
+header{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #dfdddd;
+
+}
+
+#social-media{
+    margin-top: 30px;
+}
+.network .button{
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 50px;
+    margin: 0 12px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 15);
+    transition: all 0,3s ease-in-out;
+}
+.network .button:hover {
+    width: 160px;
+}
+
+.network .button:nth-child(1):hover{
+    background-color: #507dd8;
+    color: white;
+}
+
+.network .button:nth-child(2):hover{
+    background-color: violet;
+    color: white;
+}
+
+.network .button:nth-child(3):hover{
+    background-color: #0077b5 ;
+    color: white;
+}
+
+.network .button:nth-child(4):hover{
+    background-color: #3c4550;
+    color: white;
+    
+}
+
+.network .button:nth-child(5):hover{
+    background-color: #050505;
+    color: white;
+}
+
+.button .s-icone{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0,3s ease-in-out;
+}
+
+.button .s-icone i {
+    font-size: 20px;
+    }
+
+    .button span{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    #fa-facebook-f{
+        font-size: 12px;
+    }
+
+    .S1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
+    }
+
+    .content {
+      margin-top: 200px;
+    }
+
+    #caption1{
+        font-weight: bolder;
+        font-size: 40px;
+    }
+
+    #caption2{
+        font-size: 50px;
+    }
+
+    html {
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    * {
+        box-sizing: inherit;
+    }
+    
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    .buttonn {
+        --background: #0a3155;
+        --text: #fff;
+        --font-size: 22px;
+        --duration: 0.5s;
+        --move-hover: -4px;
+        --shadow: 0 2px 8px -1px rgb(215, 238, 5);
+        --shadow-hover: 0 4px 20px -2px rgb(251, 255, 0);
+        --font-shadow: var(--font-size);
+        padding: 15px;
+        font-family: 'Roboto';
+        font-weight: bold;
+        line-height: var(--font-size);
+        border-radius: 24px;
+        display: block;
+        outline: none;
+        text-decoration: none;
+        font-size: var(--font-size);
+        letter-spacing: 3px;
+        background: var(--background);
+        color: var(--text);
+        box-shadow: var(--shadow);
+        transform: translateY(var(--y)) translateZ(0);
+        transition: transform var(--duration) ease, box-shadow var(--duration) ease;
+        width: 200px;
+        margin: 50px;
+        padding-left: 30px;
+    }
+    
+    .buttonn div {
+        display: flex;
+        overflow: hidden;
+        text-shadow: 0 var(--font-shadow) 0 var(--text);
+    }
+    
+    .buttonn div span {
+        display: block;
+        backface-visibility: hidden;
+        font-style: normal;
+        transition: transform var(--duration) ease;
+        transform: translateY(var(--m)) translateZ(0);
+    }
+    
+    .buttonn div span:nth-child(1) {
+        transition-delay: 0.05s;
+    }
+    
+    .buttonn div span:nth-child(2) {
+        transition-delay: 0.1s;
+    }
+    
+    .buttonn div span:nth-child(3) {
+        transition-delay: 0.15s;
+    }
+    
+    .buttonn div span:nth-child(4) {
+        transition-delay: 0.2s;
+    }
+    
+    .buttonn div span:nth-child(5) {
+        transition-delay: 0.25s;
+    }
+    
+    .buttonn div span:nth-child(6) {
+        transition-delay: 0.3s;
+    }
+    
+    .buttonn div span:nth-child(7) {
+        transition-delay: 0.35s;
+    }
+    
+   
+    
+    .buttonn:hover {
+        --y: var(--move-hover);
+        --shadow: var(--shadow-hover);
+    }
+    
+    .buttonn:hover span {
+        --m: calc(var(--font-size) * -1);
+    }
+    
+    .buttonn.reverse {
+        --font-shadow: calc(var(--font-size) * -1);
+    }
+    .buttonn.reverse:hover span{
+        --m: calc(var(--font-size) );
+    }
+    .imgprofil{
+        width: 500px;
+        height:500px;
+        position: absolute;
+        background-color: transparent;
+        right: 20px;
+        
+        
+    }
+    .square
+    {
+        background-color: transparent;
+        position: relative;
+        width: 500px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .square i
+    {
+        background-color: transparent;
+        position: absolute;
+        inset: 0;
+        border: 2px solid #09035e;
+        transition: 0.5s;
+    }
+    .square i:nth-child(1)
+    {
+        background-color: transparent;
+        border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+        animation: animate 6s linear infinite;
+    }
+    .square i:nth-child(2)
+    {
+        background-color: transparent;
+        border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+        animation: animate 4s linear infinite;
+    }
+    .square i:nth-child(3)
+    {
+        background-color: transparent;
+        border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+        animation: animate2 10s linear infinite;
+    }
+    .square:hover i
+    {
+        background-color: transparent;
+        border: 6px solid var(--clr);
+        filter: drop-shadow(0 0 20px var(--clr));
+    }
+    @keyframes animate
+    {
+        0%
+        {
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes animate2
+    {
+        0%
+        {
+            transform: rotate(360deg);
+        }
+        100%
+        {
+            transform: rotate(0deg);
+        }
+    }
+   
+.s2{
+position: relative;
+height: 550px;
+}
+.NOM{
+    position: absolute;
+    left: 920px;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+.video{
+    position: absolute;
+    top: 30px;
+    margin: 50px;
+    margin-left: 200px; 
+    
+  
+
+}
+
+.experience {
+    position: absolute;
+    top: 320px;
+    background-color: #f8cb05;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 30px;
+    text-align: center;
+    height: 140px;
+    margin-top: 20px;
+    padding-top: 30px;
+    left: 400px;   
+    box-shadow: 0 2px 8px -1px rgb(9, 5, 238); ;
+}
+#video{
+    top: 30px;
+    border-radius: 50px;
+    height: 450px; 
+    width: 250px;
+    box-shadow: 0 2px 8px -1px rgb(238, 222, 5); ;
+   
+}
+
+.certif {
+    position: absolute;
+    top: 320px;
+    background-color: #1a1199;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+    height: 140px;
+    margin-top: 20px;
+    padding-top: 30px;
+    left: 600px;   
+    box-shadow: 0 2px 8px -1px rgb(238, 222, 5); 
+}
+
+#scrum{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#Master{
+    font-size: 30px;
+}
+
+.project {
+    position: absolute;
+    top: 320px;
+    background-color: #f8cb05;
+    color: white;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 30px;
+    text-align: center;
+    height: 140px;
+    margin-top: 20px;
+    padding-top: 30px;
+    width: 180px;
+    left: 860px;   
+    box-shadow: 0 2px 8px -1px rgb(9, 5, 238); ;
+} 
+
+.licence{
+    position: absolute;
+    top: 320px;
+    background-color: #1a1199;
+    color: white;
+    padding: 40px;
+    border-radius: 30px;
+    text-align: center;
+    height: 140px;
+    margin-top: 20px;
+    padding-top: 30px;
+    left: 1080px;   
+    font-size: 30px;
+    box-shadow: 0 2px 8px -1px rgb(238, 222, 5);   
+}
+
+
+
+.title-exp{
+    position: absolute;
+    top: 70px;
+    left: 500px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    animation-name: slide;
+    
+}
+
+.prg-exp{
+    position: absolute;
+    top: 130px;
+    font-size: 20px;
+    left: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    animation-name: slide;  
+    width: 720px;
+    
+}
+
+.S3{ 
+    position: relative;
+    height: 300px;
+    
+}
+.loader-container {
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    height: 200px;
+    width: 350px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    left: 800px;
+    
+}
+
+.pp {
+    margin: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.loader {
+    width: 400px;
+    height: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px -1px rgb(238, 222, 5); ;
+}
+  
+.bar {
+    height: 100%;
+    background-color: #071591;
+    width: 0;
+    animation: fillBar 2s infinite ease-in-out;
+}
+  
+@keyframes fillBar {
+    0% {
+      width: 0;
+      border-radius: 15px;
+    }
+    50% {
+      width: 60%;
+      border-radius: 10px;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+h2 {
+    position: absolute;
+    top: 50px;
+    left: 260px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    animation-name: slide;
+    font-size: 30px
+}
+
+.Great {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 620px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image:url(Sans\ titre\ -\ 1.png) ;
+    height: 300px;
+    color: #f1f1f1;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+   
+}
+
+.footer1 {
+ margin-top: 120px;
+ text-align: center;
+ font-size: 30px;
+
+ padding-left: 20px;
+
+}
